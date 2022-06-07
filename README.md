@@ -1,2 +1,2 @@
-# grandmas-cake
-HTML, CSS, Bootstrap
+# js-cart-setup
+ADD ITEMS TO CART JAVASCRIPT PROJECT

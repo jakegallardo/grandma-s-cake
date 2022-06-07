@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --mainPink: rgb(240, 120, 152);
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+  --shadowFocus: rgba(240, 120, 152, 0.25);
+  --mainTransition: all 0.5s ease-in-out;
+  --mainShadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.75);
+  --mainSpacing: 0.5rem;
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+/* global styles */
+.btn-black {
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+.btn-black:hover {
+  color: var(--mainPink) !important;
+  background: var(--mainBlack);
+}
+
+.btn-pink {
+  color: var(--mainPink) !important;
+  border-color: var(--mainPink) !important;
+  background: #f0f0f0;
+}
+
+.btn-pink:hover {
+  color: var(--mainBlack) !important;
+  background: var(--mainPink);
+}
+
+/* nav links */
+.navbar-toggler {
+  outline: none !important;
+}
+.toggler-icon {
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #ef7998;
+}
+.nav-link {
+  color: #ef7998;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.nav-link:hover {
+  color: #000;
+}
+/* cart styles */
+.cart-info__icon {
+  color: #000;
+  cursor: pointer;
+}
+.cart-info {
+  border: 1.6px solid #000;
+  border: 0.1rem solid #000;
+  color: #000;
+  border-radius: 0.25rem;
+  padding: 6.4px 9.6px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: #ef7998;
+  border-color: #ef7998;
+  color: #fff;
+}
+.cart-info:hover .cart-info__icon {
+  color: #fff;
+}
+.max-height {
+  min-height: calc(100vh - 76px);
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(249, 228, 148, 0.5)),
+      to(rgba(249, 228, 148, 0.5))
+    ),
+    url("../img/headerBcg.jpeg");
+  background: linear-gradient(
+      rgba(249, 228, 148, 0.5),
+      rgba(249, 228, 148, 0.5)
+    ),
+    url("../img/headerBcg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner {
+  color: #fff;
+  margin-top: -64px;
+  margin-top: -4rem;
+}
+.banner-title {
+  color: #ef7998;
+  font-size: 64px;
+  font-size: 4rem;
+}
+.banner-link {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #000;
+  border: 3.2px solid #000;
+  border: 0.2rem solid #000;
+}
+.banner-link:hover {
+  background: #000;
+  color: #ef7998;
+}
+/* about section */
+.about-img__container {
+  position: relative;
+}
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  top: -1.5rem;
+  left: -27.2px;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 8px solid rgb(249, 228, 148);
+  outline: 0.5rem solid rgb(249, 228, 148);
+  z-index: -1;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+/* store */
+.store {
+  background: rgb(238, 238, 238);
+}
+.search-box {
+  background: #ef7998;
+  color: #000;
+}
+.single-item {
+  -webkit-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+}
+.single-item:hover {
+  -webkit-box-shadow: 0 10px 15px rgb(0, 0, 0);
+  box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-img {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 12px;
+  padding: 0.75rem;
+  background: rgb(249, 228, 148);
+  border-top-left-radius: 16px;
+  border-top-left-radius: 1rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translate(100%, 100%);
+  transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.store-item-icon:hover {
+  color: #fff;
+}
+/* store section */
+.store {
+  background: var(--mainGrey);
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: var(--shadowFocus) !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--shadowFocus) !important;
+}
+
+.search-icon {
+  background: var(--mainPink);
+  color: var(--mainBlack);
+}
+
+/* store items */
+
+.single-item {
+  transition: var(--mainTransition);
+}
+.single-item:hover {
+  box-shadow: var(--mainShadow);
+}
+
+.item-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.item-img-container:hover {
+  cursor: pointer;
+}
+
+.item-img {
+  transition: var(--mainTransition);
+}
+
+.item-img-container:hover .item-img {
+  transform: scale(1.2);
+}
+
+.item-cart-container {
+  height: 3rem;
+  width: 3rem;
+  background: var(--mainYellow);
+  padding: 0.75rem;
+  border-top-left-radius: 1rem;
+  position: absolute;
+  bottom: -3rem;
+  right: -3rem;
+}
+
+.item-cart-icon {
+  transition: var(--mainTransition);
+}
+
+.item-cart-container:hover .item-cart-icon {
+  color: var(--mainWhite);
+}
+
+.item-cart-container {
+  transition: var(--mainTransition);
+}
+
+.item-img-container:hover .item-cart-container {
+  bottom: 0;
+  right: 0;
+}
+/* end of stores */
+/* services section */
+.services {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/servicesBcg.jpeg") center/cover no-repeat fixed;
+}
+
+.service-title {
+  letter-spacing: var(--mainSpacing);
+}
+
+.service-info {
+  word-spacing: var(--mainSpacing);
+}
+/* end of services section */
+/* footer */
+.footer-left {
+  background: var(--mainBlack);
+}
+
+.footer-icon {
+  color: var(--mainWhite);
+  font-size: 1.75rem;
+  transition: var(--mainTransition);
+}
+
+.footer-icon:hover {
+  color: var(--mainPink);
+}
+
+.footer-right {
+  background: #eeeeee;
+}
+/* end of footer */
