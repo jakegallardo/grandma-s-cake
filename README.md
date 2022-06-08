@@ -1,2 +1,2 @@
-# js-cart-setup
+# HTML, CSS, Boostrap Project
 ADD ITEMS TO CART JAVASCRIPT PROJECT
